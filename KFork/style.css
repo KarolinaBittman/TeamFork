@@ -84,7 +84,7 @@
   
   .image1 {
     flex: 1;
-    background-image: url(https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
+    background-image: url(./pics/imageindex1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
@@ -94,7 +94,7 @@
 
   .image2 {
     flex: 1;
-    background-image:url(https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80);
+    background-image:url(./pics/imageindex2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
@@ -237,6 +237,19 @@ body {
   font-size: 1.5rem;
   font-weight: 200;
   margin-top: 1rem;
+
+}
+
+.hero1-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.hero1-subtitle {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0 300px;
+
 }
 .hero-button {
   background-color: #393939;
@@ -397,7 +410,7 @@ body {
   border: 1px solid #db7598;
 }
 
-/*Contact Form*/
+/*Contact Form
 
 .card{
   color: #333;
@@ -425,30 +438,155 @@ body {
 .btn:hover {
   transform: scale(0.98);
 }
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h1,
+h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+/* Showcase 
+
+.showcase{
+  height: 400px;
+  background-color:pink;
+  position: relative;
+  color: white;
+}
+
+.showcase h1{
+  font-size: 40px;
+}
+
+.showcase p{
+  margin: 20px 0;
+}
+
+.showcase .grid{
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
 
 .showcase-form{
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 400px;
-    padding: 40px;
-   
-    justify-self: flex-end;
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
 }
 
 .showcase-form .form-control {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .showcase-form input[type='text'],
 .showcase-form input[type='email'] {
-   border: 0;
-   border-bottom: 1px solid #b4becb;
-   width: 100%;
-   padding: 3px;
-   font-size: 16px;
+ border: 0;
+ border-bottom: 1px solid #b4becb;
+ width: 100%;
+ padding: 3px;
+ font-size: 16px;
 }
 
 .showcase-form input:focus {
-    outline: none;
+  outline: none;
 }
+
+.showcase::before,
+.showcase::after {
+content: '';
+position: absolute;
+height: 100px;
+bottom: -70px;
+right: 0;
+left: 0;
+background: white;
+transform: skewY(-3deg);
+-webkit-transform: skewY(-3deg);
+-moz-transform: skewY(-3deg);
+-ms-transform: skewY(-3deg);
+}
+
+/*Utilities
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+
+}
+
+.card{
+  color: #333;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: pink;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px white solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
